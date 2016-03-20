@@ -22,7 +22,7 @@ imagefl = [
   './path_to_my_images/LE70020682006201_ndmi.tif'
   ]
  
-s = [ getSceneinfo(fl, as_DataFrame = True) for i, fl in enumerate(imagefl) ]
+s = [ getSceneinfo(fl, as_DataFrame = True) for fl in imagefl ]
 s = pd.concat(s)
 
 print s
